@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Mina/Term 6/Computer Archetcture/Lab/Project_14_3/Control_Unit.xst" -ofn "D:/Mina/Term 6/Computer Archetcture/Lab/Project_14_3/Control_Unit.syr" 
+xst -intstyle ise -ifn "D:/Mina/Term 6/Computer Archetcture/Lab/Project_14_3/Control_Unit.xst" -ofn "D:/Mina/Term 6/Computer Archetcture/Lab/Project_14_3/Control_Unit.syr" 
+xst -intstyle ise -ifn "D:/Mina/Term 6/Computer Archetcture/Home/Project_22_4/Control_Unit.xst" -ofn "D:/Mina/Term 6/Computer Archetcture/Home/Project_22_4/Control_Unit.syr" 
+xst -intstyle ise -ifn "D:/Mina/Term 6/Computer Archetcture/Home/Project_22_4/Control_Unit.xst" -ofn "D:/Mina/Term 6/Computer Archetcture/Home/Project_22_4/Control_Unit.syr" 

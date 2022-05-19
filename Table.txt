@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+
+
+
+0000 AND
+0001 OR
+0111 A < B 1 else 0
+0010 A+B
+0110 A-B
+1100 NOR
+
+A = B zero = 1 else zero = 0;

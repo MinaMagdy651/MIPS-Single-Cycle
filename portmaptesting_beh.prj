@@ -1,0 +1,3 @@
+vhdl work "MUX_2_1.vhd"
+vhdl work "portmaptest.vhd"
+vhdl work "portmaptesting.vhd"

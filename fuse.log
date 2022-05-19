@@ -1,0 +1,45 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MIPS_isim_beh.exe -prj D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MIPS_beh.prj work.MIPS 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/SignExtend.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/Shift_Left_32_32.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/Reg_Files.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/PC.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MUX_2_1_5Bits.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MUX_2_1.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/Instruction_Memory.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/Data_Memory.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/Control_Unit.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/ALU_Control.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/ALU.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/Adder.vhd" into library work
+Parsing VHDL file "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MIPS.vhd" into library work
+WARNING:HDLCompiler:946 - "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MIPS.vhd" Line 186: Actual for formal port s is neither a static name nor a globally static expression
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity PC [pc_default]
+Compiling architecture behavioral of entity Adder [adder_default]
+Compiling architecture behavioral of entity Instruction_Memory [instruction_memory_default]
+Compiling architecture behavioral of entity Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity ALU_Control [alu_control_default]
+Compiling architecture behavioral of entity MUX_2_1_5Bits [mux_2_1_5bits_default]
+Compiling architecture behavioral of entity MUX_2_1 [mux_2_1_default]
+Compiling architecture behavioral of entity Reg_Files [reg_files_default]
+Compiling architecture behavioral of entity SignExtend [signextend_default]
+Compiling architecture behavioral of entity Shift_Left_32_32 [shift_left_32_32_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity Data_Memory [data_memory_default]
+Compiling architecture behavioral of entity mips
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 30 VHDL Units
+Built simulation executable D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MIPS_isim_beh.exe
+Fuse Memory Usage: 39028 KB
+Fuse CPU Usage: 437 ms

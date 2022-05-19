@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MIPS_isim_beh.exe" -prj "D:/Mina/Term 6/Computer Archetcture/Project/Final Project/MIPS_beh.prj" "work.MIPS" 

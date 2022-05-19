@@ -1,0 +1,3 @@
+vhdl isim_temp "MUX_2_1.vhd"
+vhdl isim_temp "portmaptest.vhd"
+vhdl isim_temp "portmaptesting.vhd"

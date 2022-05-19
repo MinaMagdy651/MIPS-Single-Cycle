@@ -1,0 +1,591 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: Data_Memory.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Data_Memory.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Data_Memory"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Data_Memory
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Mina\Term 6\Computer Archetcture\Home\Project_4_4\Data_Memory.vhd" into library work
+Parsing entity <Data_Memory>.
+Parsing architecture <Behavioral> of entity <data_memory>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Data_Memory> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\Mina\Term 6\Computer Archetcture\Home\Project_4_4\Data_Memory.vhd" Line 29: array_memory should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Mina\Term 6\Computer Archetcture\Home\Project_4_4\Data_Memory.vhd" Line 30: array_memory should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Mina\Term 6\Computer Archetcture\Home\Project_4_4\Data_Memory.vhd" Line 31: array_memory should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Mina\Term 6\Computer Archetcture\Home\Project_4_4\Data_Memory.vhd" Line 32: array_memory should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Data_Memory>.
+    Related source file is "D:\Mina\Term 6\Computer Archetcture\Home\Project_4_4\Data_Memory.vhd".
+WARNING:Xst:3012 - Available block RAM resources offer a maximum of two write ports. You are apparently describing a RAM with 4 separate write ports for signal <array_Memory>. The RAM will be expanded on registers.
+INFO:Xst:3019 - HDL ADVISOR - 256 flip-flops were inferred for signal <array_Memory>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 8-bit register for signal <array_Memory_ff_0>.
+    Found 8-bit register for signal <array_Memory_ff_1>.
+    Found 8-bit register for signal <array_Memory_ff_2>.
+    Found 8-bit register for signal <array_Memory_ff_3>.
+    Found 8-bit register for signal <array_Memory_ff_4>.
+    Found 8-bit register for signal <array_Memory_ff_5>.
+    Found 8-bit register for signal <array_Memory_ff_6>.
+    Found 8-bit register for signal <array_Memory_ff_7>.
+    Found 8-bit register for signal <array_Memory_ff_8>.
+    Found 8-bit register for signal <array_Memory_ff_9>.
+    Found 8-bit register for signal <array_Memory_ff_10>.
+    Found 8-bit register for signal <array_Memory_ff_11>.
+    Found 8-bit register for signal <array_Memory_ff_12>.
+    Found 8-bit register for signal <array_Memory_ff_13>.
+    Found 8-bit register for signal <array_Memory_ff_14>.
+    Found 8-bit register for signal <array_Memory_ff_15>.
+    Found 8-bit register for signal <array_Memory_ff_16>.
+    Found 8-bit register for signal <array_Memory_ff_17>.
+    Found 8-bit register for signal <array_Memory_ff_18>.
+    Found 8-bit register for signal <array_Memory_ff_19>.
+    Found 8-bit register for signal <array_Memory_ff_20>.
+    Found 8-bit register for signal <array_Memory_ff_21>.
+    Found 8-bit register for signal <array_Memory_ff_22>.
+    Found 8-bit register for signal <array_Memory_ff_23>.
+    Found 8-bit register for signal <array_Memory_ff_24>.
+    Found 8-bit register for signal <array_Memory_ff_25>.
+    Found 8-bit register for signal <array_Memory_ff_26>.
+    Found 8-bit register for signal <array_Memory_ff_27>.
+    Found 8-bit register for signal <array_Memory_ff_28>.
+    Found 8-bit register for signal <array_Memory_ff_29>.
+    Found 8-bit register for signal <array_Memory_ff_30>.
+    Found 8-bit register for signal <array_Memory_ff_31>.
+    Found 32-bit adder for signal <n0051> created at line 1241.
+    Found 32-bit adder for signal <n0053> created at line 1241.
+    Found 32-bit adder for signal <n0055> created at line 1241.
+    Found 8-bit 32-to-1 multiplexer for signal <Address[4]_read_port_0_OUT> created at line 0.
+    Found 8-bit 32-to-1 multiplexer for signal <Address[31]_read_port_2_OUT> created at line 0.
+    Found 8-bit 32-to-1 multiplexer for signal <Address[31]_read_port_4_OUT> created at line 0.
+    Found 8-bit 32-to-1 multiplexer for signal <Address[31]_read_port_6_OUT> created at line 0.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <Read_Data<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit tristate buffer for signal <array_Memory_trst_0> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_0> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_0> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_0> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_1> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_1> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_1> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_1> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_2> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_2> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_2> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_2> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_3> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_3> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_3> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_3> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_4> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_4> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_4> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_4> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_5> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_5> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_5> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_5> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_6> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_6> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_6> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_6> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_7> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_7> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_7> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_7> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_8> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_8> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_8> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_8> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_9> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_9> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_9> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_9> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_10> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_10> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_10> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_10> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_11> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_11> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_11> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_11> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_12> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_12> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_12> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_12> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_13> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_13> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_13> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_13> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_14> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_14> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_14> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_14> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_15> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_15> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_15> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_15> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_16> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_16> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_16> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_16> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_17> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_17> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_17> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_17> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_18> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_18> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_18> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_18> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_19> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_19> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_19> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_19> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_20> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_20> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_20> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_20> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_21> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_21> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_21> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_21> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_22> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_22> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_22> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_22> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_23> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_23> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_23> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_23> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_24> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_24> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_24> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_24> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_25> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_25> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_25> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_25> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_26> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_26> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_26> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_26> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_27> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_27> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_27> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_27> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_28> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_28> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_28> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_28> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_29> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_29> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_29> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_29> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_30> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_30> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_30> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_30> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_31> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_31> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_31> created at line 27
+    Found 8-bit tristate buffer for signal <array_Memory_trst_31> created at line 27
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 256 D-type flip-flop(s).
+	inferred  32 Latch(s).
+	inferred   5 Multiplexer(s).
+	inferred 128 Tristate(s).
+Unit <Data_Memory> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 32
+ 8-bit register                                        : 32
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 1
+ 8-bit 32-to-1 multiplexer                             : 4
+# Tristates                                            : 128
+ 8-bit tristate buffer                                 : 128
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 5-bit adder                                           : 3
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 1
+ 8-bit 32-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2040 - Unit Data_Memory: 256 multi-source signals are replaced by logic (pull-up yes): array_Memory_trst_0<24>, array_Memory_trst_0<25>, array_Memory_trst_0<26>, array_Memory_trst_0<27>, array_Memory_trst_0<28>, array_Memory_trst_0<29>, array_Memory_trst_0<30>, array_Memory_trst_0<31>, array_Memory_trst_10<24>, array_Memory_trst_10<25>, array_Memory_trst_10<26>, array_Memory_trst_10<27>, array_Memory_trst_10<28>, array_Memory_trst_10<29>, array_Memory_trst_10<30>, array_Memory_trst_10<31>, array_Memory_trst_11<24>, array_Memory_trst_11<25>, array_Memory_trst_11<26>, array_Memory_trst_11<27>, array_Memory_trst_11<28>, array_Memory_trst_11<29>, array_Memory_trst_11<30>, array_Memory_trst_11<31>, array_Memory_trst_12<24>, array_Memory_trst_12<25>, array_Memory_trst_12<26>, array_Memory_trst_12<27>, array_Memory_trst_12<28>, array_Memory_trst_12<29>, array_Memory_trst_12<30>, array_Memory_trst_12<31>, array_Memory_trst_13<24>, array_Memory_trst_13<25>, array_Memory_trst_13<26>, array_Memory_trst_13<27>, array_Memory_trst_13<28>, array_Memory_trst_13<29>, array_Memory_trst_13<30>, array_Memory_trst_13<31>, array_Memory_trst_14<24>, array_Memory_trst_14<25>, array_Memory_trst_14<26>, array_Memory_trst_14<27>, array_Memory_trst_14<28>, array_Memory_trst_14<29>, array_Memory_trst_14<30>, array_Memory_trst_14<31>, array_Memory_trst_15<24>, array_Memory_trst_15<25>, array_Memory_trst_15<26>, array_Memory_trst_15<27>, array_Memory_trst_15<28>, array_Memory_trst_15<29>, array_Memory_trst_15<30>, array_Memory_trst_15<31>, array_Memory_trst_16<24>, array_Memory_trst_16<25>, array_Memory_trst_16<26>, array_Memory_trst_16<27>, array_Memory_trst_16<28>, array_Memory_trst_16<29>, array_Memory_trst_16<30>, array_Memory_trst_16<31>, array_Memory_trst_17<24>, array_Memory_trst_17<25>, array_Memory_trst_17<26>, array_Memory_trst_17<27>, array_Memory_trst_17<28>, array_Memory_trst_17<29>, array_Memory_trst_17<30>, array_Memory_trst_17<31>, array_Memory_trst_18<24>, array_Memory_trst_18<25>, array_Memory_trst_18<26>, array_Memory_trst_18<27>, array_Memory_trst_18<28>, array_Memory_trst_18<29>, array_Memory_trst_18<30>, array_Memory_trst_18<31>, array_Memory_trst_19<24>, array_Memory_trst_19<25>, array_Memory_trst_19<26>, array_Memory_trst_19<27>, array_Memory_trst_19<28>, array_Memory_trst_19<29>, array_Memory_trst_19<30>, array_Memory_trst_19<31>, array_Memory_trst_1<24>, array_Memory_trst_1<25>, array_Memory_trst_1<26>, array_Memory_trst_1<27>, array_Memory_trst_1<28>, array_Memory_trst_1<29>, array_Memory_trst_1<30>, array_Memory_trst_1<31>, array_Memory_trst_20<24>, array_Memory_trst_20<25>, array_Memory_trst_20<26>, array_Memory_trst_20<27>, array_Memory_trst_20<28>, array_Memory_trst_20<29>, array_Memory_trst_20<30>, array_Memory_trst_20<31>, array_Memory_trst_21<24>, array_Memory_trst_21<25>, array_Memory_trst_21<26>, array_Memory_trst_21<27>, array_Memory_trst_21<28>, array_Memory_trst_21<29>, array_Memory_trst_21<30>, array_Memory_trst_21<31>, array_Memory_trst_22<24>, array_Memory_trst_22<25>, array_Memory_trst_22<26>, array_Memory_trst_22<27>, array_Memory_trst_22<28>, array_Memory_trst_22<29>, array_Memory_trst_22<30>, array_Memory_trst_22<31>, array_Memory_trst_23<24>, array_Memory_trst_23<25>, array_Memory_trst_23<26>, array_Memory_trst_23<27>, array_Memory_trst_23<28>, array_Memory_trst_23<29>, array_Memory_trst_23<30>, array_Memory_trst_23<31>, array_Memory_trst_24<24>, array_Memory_trst_24<25>, array_Memory_trst_24<26>, array_Memory_trst_24<27>, array_Memory_trst_24<28>, array_Memory_trst_24<29>, array_Memory_trst_24<30>, array_Memory_trst_24<31>, array_Memory_trst_25<24>, array_Memory_trst_25<25>, array_Memory_trst_25<26>, array_Memory_trst_25<27>, array_Memory_trst_25<28>, array_Memory_trst_25<29>, array_Memory_trst_25<30>, array_Memory_trst_25<31>, array_Memory_trst_26<24>, array_Memory_trst_26<25>, array_Memory_trst_26<26>, array_Memory_trst_26<27>, array_Memory_trst_26<28>, array_Memory_trst_26<29>, array_Memory_trst_26<30>, array_Memory_trst_26<31>, array_Memory_trst_27<24>, array_Memory_trst_27<25>, array_Memory_trst_27<26>, array_Memory_trst_27<27>, array_Memory_trst_27<28>, array_Memory_trst_27<29>, array_Memory_trst_27<30>, array_Memory_trst_27<31>, array_Memory_trst_28<24>, array_Memory_trst_28<25>, array_Memory_trst_28<26>, array_Memory_trst_28<27>, array_Memory_trst_28<28>, array_Memory_trst_28<29>, array_Memory_trst_28<30>, array_Memory_trst_28<31>, array_Memory_trst_29<24>, array_Memory_trst_29<25>, array_Memory_trst_29<26>, array_Memory_trst_29<27>, array_Memory_trst_29<28>, array_Memory_trst_29<29>, array_Memory_trst_29<30>, array_Memory_trst_29<31>, array_Memory_trst_2<24>, array_Memory_trst_2<25>, array_Memory_trst_2<26>, array_Memory_trst_2<27>, array_Memory_trst_2<28>, array_Memory_trst_2<29>, array_Memory_trst_2<30>, array_Memory_trst_2<31>, array_Memory_trst_30<24>, array_Memory_trst_30<25>, array_Memory_trst_30<26>, array_Memory_trst_30<27>, array_Memory_trst_30<28>, array_Memory_trst_30<29>, array_Memory_trst_30<30>, array_Memory_trst_30<31>, array_Memory_trst_31<24>, array_Memory_trst_31<25>, array_Memory_trst_31<26>, array_Memory_trst_31<27>, array_Memory_trst_31<28>, array_Memory_trst_31<29>, array_Memory_trst_31<30>, array_Memory_trst_31<31>, array_Memory_trst_3<24>, array_Memory_trst_3<25>, array_Memory_trst_3<26>, array_Memory_trst_3<27>, array_Memory_trst_3<28>, array_Memory_trst_3<29>, array_Memory_trst_3<30>, array_Memory_trst_3<31>, array_Memory_trst_4<24>, array_Memory_trst_4<25>, array_Memory_trst_4<26>, array_Memory_trst_4<27>, array_Memory_trst_4<28>, array_Memory_trst_4<29>, array_Memory_trst_4<30>, array_Memory_trst_4<31>, array_Memory_trst_5<24>, array_Memory_trst_5<25>, array_Memory_trst_5<26>, array_Memory_trst_5<27>, array_Memory_trst_5<28>, array_Memory_trst_5<29>, array_Memory_trst_5<30>, array_Memory_trst_5<31>, array_Memory_trst_6<24>, array_Memory_trst_6<25>, array_Memory_trst_6<26>, array_Memory_trst_6<27>, array_Memory_trst_6<28>, array_Memory_trst_6<29>, array_Memory_trst_6<30>, array_Memory_trst_6<31>, array_Memory_trst_7<24>, array_Memory_trst_7<25>, array_Memory_trst_7<26>, array_Memory_trst_7<27>, array_Memory_trst_7<28>, array_Memory_trst_7<29>, array_Memory_trst_7<30>, array_Memory_trst_7<31>, array_Memory_trst_8<24>, array_Memory_trst_8<25>, array_Memory_trst_8<26>, array_Memory_trst_8<27>, array_Memory_trst_8<28>, array_Memory_trst_8<29>, array_Memory_trst_8<30>, array_Memory_trst_8<31>, array_Memory_trst_9<24>, array_Memory_trst_9<25>, array_Memory_trst_9<26>, array_Memory_trst_9<27>, array_Memory_trst_9<28>, array_Memory_trst_9<29>, array_Memory_trst_9<30>, array_Memory_trst_9<31>.
+
+Optimizing unit <Data_Memory> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Data_Memory, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Data_Memory.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1024
+#      LUT2                        : 2
+#      LUT3                        : 5
+#      LUT4                        : 327
+#      LUT5                        : 82
+#      LUT6                        : 576
+#      MUXF7                       : 32
+# FlipFlops/Latches                : 288
+#      FDE                         : 256
+#      LDE_1                       : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 71
+#      IBUF                        : 39
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             256  out of  126800     0%  
+ Number of Slice LUTs:                  992  out of  63400     1%  
+    Number used as Logic:               992  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    992
+   Number with an unused Flip Flop:     736  out of    992    74%  
+   Number with an unused LUT:             0  out of    992     0%  
+   Number of fully used LUT-FF pairs:   256  out of    992    25%  
+   Number of unique control sets:        33
+
+IO Utilization: 
+ Number of IOs:                          99
+ Number of bonded IOBs:                  72  out of    210    34%  
+    IOB Flip Flops/Latches:              32
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 256   |
+MemWrite                           | IBUF+BUFG              | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.895ns
+   Maximum output required time after clock: 0.754ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 36736 / 512
+-------------------------------------------------------------------------
+Offset:              2.895ns (Levels of Logic = 5)
+  Source:            Address<4> (PAD)
+  Destination:       _o443_24 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Address<4> to _o443_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            59   0.001   0.794  Address_4_IBUF (Address_4_IBUF)
+     LUT5:I0->O           40   0.097   0.791  Madd_n0051_Madd_xor<4>11 (n0051<4>)
+     LUT5:I0->O            9   0.097   0.548  _n01141 (_n0114)
+     LUT4:I1->O           16   0.097   0.364  _n02611 (_n0261)
+     LUT6:I5->O            1   0.097   0.000  array_Memory_trst_16<31>LogicTrst (array_Memory_trst_16<31>)
+     FDE:D                     0.008          _o443_31
+    ----------------------------------------
+    Total                      2.895ns (0.397ns logic, 2.498ns route)
+                                       (13.7% logic, 86.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MemWrite'
+  Total number of paths / destination ports: 1128 / 64
+-------------------------------------------------------------------------
+Offset:              2.448ns (Levels of Logic = 5)
+  Source:            Address<1> (PAD)
+  Destination:       Read_Data_21 (LATCH)
+  Destination Clock: MemWrite rising
+
+  Data Path: Address<1> to Read_Data_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           160   0.001   0.506  Address_1_IBUF (Address_1_IBUF)
+     LUT2:I0->O          128   0.097   0.815  Madd_n0051_Madd_xor<1>11 (n0051<1>)
+     LUT6:I0->O            1   0.097   0.556  Mmux_Address[31]_read_port_2_OUT_822 (Mmux_Address[31]_read_port_2_OUT_822)
+     LUT6:I2->O            1   0.097   0.000  Mmux_Address[31]_read_port_2_OUT_37 (Mmux_Address[31]_read_port_2_OUT_37)
+     MUXF7:I1->O           1   0.279   0.000  Mmux_Address[31]_read_port_2_OUT_2_f7_6 (Address[31]_read_port_2_OUT<7>)
+     LDE_1:D                  -0.028          Read_Data_23
+    ----------------------------------------
+    Total                      2.448ns (0.571ns logic, 1.877ns route)
+                                       (23.3% logic, 76.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MemWrite'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.754ns (Levels of Logic = 1)
+  Source:            Read_Data_31 (LATCH)
+  Destination:       Read_Data<31> (PAD)
+  Source Clock:      MemWrite rising
+
+  Data Path: Read_Data_31 to Read_Data<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            1   0.475   0.279  Read_Data_31 (Read_Data_31)
+     OBUF:I->O                 0.000          Read_Data_31_OBUF (Read_Data<31>)
+    ----------------------------------------
+    Total                      0.754ns (0.475ns logic, 0.279ns route)
+                                       (63.0% logic, 37.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock MemWrite
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.961|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.33 secs
+ 
+--> 
+
+Total memory usage is 4696352 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   38 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,2 @@
+vhdl work "Reg_Files.vhd"
+vhdl work "Reg_Files_Sim.vhd"
